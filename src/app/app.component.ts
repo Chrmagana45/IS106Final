@@ -1,21 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { FlexModalService } from './shared-components/flex-modal/flex-modal.service';
+import { Component, OnInit } from "@angular/core";
+import { FlexModalService } from "./shared-components/flex-modal/flex-modal.service";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"],
 })
 export class AppComponent implements OnInit {
-  title = 'final';
-  aboutText: string;
-  constructor(private flexModal: FlexModalService) { }
+  title = "final";
+  aboutText = "This application is designed by Christopher Magana (C)2021";
+  constructor(private flexModal: FlexModalService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   // Launch flex modal or alert (3pts reduced) showing about text
-  openAboutModal() {
+  openAboutModal() {}
+  showHelpText() {
+    this.flexModal.openDialog("about-modal");
   }
-
 }
