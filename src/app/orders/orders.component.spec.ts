@@ -1,16 +1,15 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { OrdersComponent } from './orders.component';
+import { OrdersComponent } from "./orders.component";
 
-describe('OrdersComponent', () => {
+describe("OrdersComponent", () => {
   let component: OrdersComponent;
   let fixture: ComponentFixture<OrdersComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OrdersComponent ]
-    })
-    .compileComponents();
+      declarations: [OrdersComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +18,31 @@ describe('OrdersComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
+    expect(component).toBeTruthy();
+  });
+});
+import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+
+import { OrdersComponent } from "./orders.component";
+
+describe("OrdersComponent", () => {
+  let component: OrdersComponent;
+  let fixture: ComponentFixture<OrdersComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [OrdersComponent],
+    }).compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(OrdersComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it("should create", () => {
     expect(component).toBeTruthy();
   });
 });
